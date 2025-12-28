@@ -128,5 +128,11 @@ STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
+# The format is 'app_name:path_name'
+LOGIN_URL = 'account:login'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = 'account:login'
+
 
 AUTHENTICATION_BACKENDS = ['account.backends.EmailBackend']
+
